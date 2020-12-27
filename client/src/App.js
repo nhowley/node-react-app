@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import axios from 'axios'
+import Home from './Components/Home.js';
 
 class App extends Component {
   state = {
@@ -16,10 +18,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Here is our new feature!</h1>
-        <h1>{this.state.response.body}</h1>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+      // <div className="App">
+      //   <h1>Here is our new feature!</h1>
+      //   <h1>{this.state.response.body}</h1>
+      // </div>
     );
   }
 }
