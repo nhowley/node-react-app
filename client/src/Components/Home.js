@@ -175,7 +175,7 @@ class Home extends Component {
             <h2 className="text-4xl text-center mt-6 lg:mt-0">Pricing</h2>
             <div className="price-plans flex mt-12 justify-center flex-col md:flex-row">
               <div className="price-plan">
-                <p className="text-3xl text-center">Nutrition Only</p>
+                <p className="text-3xl text-center">Nutrition Only Basic</p>
                 <p className="price text-center text-xl mt-4">€50/month</p>
                 <div className="flex mt-4 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
